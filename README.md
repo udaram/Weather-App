@@ -11,4 +11,4 @@ A Flutter App for Weather Forecast
 
 # Preview of App
 
-[](https://github.com/udaram/Weather-App/blob/master/waetherapp.gif)
+![alt text](https://github.com/udaram/Weather-App/blob/master/waetherapp.gif)
