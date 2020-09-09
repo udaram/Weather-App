@@ -7,7 +7,7 @@ A Flutter App for Weather Forecast
 <br>
 -> Users can see current weather, hourly forecast, and daily weather forecast using the app's interactive navigation.
 <br>
--> For fetching weather data I used weatherbit.io API
+-> For fetching weather data I used [weatherbit.io](https://www.weatherbit.io/api) API
 
 ## Flutter Packages Used
 * https://pub.dev/
