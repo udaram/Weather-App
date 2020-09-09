@@ -23,7 +23,7 @@ class GetCurrentWeather{
   LocationCoordinates coordinate;
   WeatherData data;
   getWeather(LocationCoordinates coordinate) async{
-    String url = 'https://api.weatherbit.io/v2.0/current?key=e1d17bfcc6754d4b8c9de6b2a6cdbe9d&lat=${coordinate.lat}&lon=${coordinate.lon}';
+    String url = 'https://api.weatherbit.io/v2.0/current?key=API-KEY&lat=${coordinate.lat}&lon=${coordinate.lon}';
     var response = await get(url);
     var jsonData = jsonDecode(response.body)["data"][0];
     //print(jsonData);
@@ -74,7 +74,7 @@ class GetHourlyWeather{
       "11":"Nov",
       "12":"Dec",
     };
-    String url = 'https://api.weatherbit.io/v2.0/forecast/hourly?key=e1d17bfcc6754d4b8c9de6b2a6cdbe9d&lat=${coordinate.lat}&lon=${coordinate.lon}';
+    String url = 'https://api.weatherbit.io/v2.0/forecast/hourly?key=API-KEY&lat=${coordinate.lat}&lon=${coordinate.lon}';
     var response = await get(url);
     var jsonData = jsonDecode(response.body)["data"];
     for(var jdata in jsonData){
@@ -124,7 +124,7 @@ class GetDailyWeather{
       "11":"Nov",
       "12":"Dec",
     };
-    String url = 'https://api.weatherbit.io/v2.0/forecast/daily?key=e1d17bfcc6754d4b8c9de6b2a6cdbe9d&lat=${coordinate.lat}&lon=${coordinate.lon}';
+    String url = 'https://api.weatherbit.io/v2.0/forecast/daily?key=API-KEY&lat=${coordinate.lat}&lon=${coordinate.lon}';
     var response = await get(url);
     var jsonData = jsonDecode(response.body)["data"];
     for(var jdata in jsonData){
